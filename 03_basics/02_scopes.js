@@ -28,3 +28,27 @@ function one(){
 }
 
 //one()
+
+if(true){
+    const username = "nitul"
+    if (username ==="nitul"){
+        const website = "youtube"
+        console.log(username+website);         // we have to console log in the scope to execute the data inside the scope
+    }
+}
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+
+addTwo(5)
+const addTwo = function(num){
+    return num + 2
+}
