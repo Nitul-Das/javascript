@@ -28,10 +28,10 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key,value] of map) {
-    console.log(key,'=', value);
+// for (const [key,value] of map) {
+//     console.log(key,'=', value);
     
-}
+// }
 
 // const myObject={
 //     anime1: "onepiece",
