@@ -1,6 +1,6 @@
 const coding = [ "js", "react", "nodejs", "angular" ]
 
-// coding.forEach(function (params) {
+// coding.forEach(function (params) {                        // cz callback function so name no written
 //     console.log(params);
     
 // })
@@ -9,29 +9,45 @@ const coding = [ "js", "react", "nodejs", "angular" ]
 //     console.log(val);
 // });
 
-// see 27 Min
+// coding.forEach((item)=>{   
+//     console.log(item);                                      // function name = not written
 
-const myCoding = [
-    {
+// })
+
+// function printMe(item) {
+//     console.log(item);
+// }
+
+// coding.forEach(printMe)
+
+coding.forEach((item,index,arr)=>{   
+    console.log(item,index,arr);                                      // function name = not written
+
+})
+
+
+
+// const myCoding = [
+//     {
         
-    languageName: "javascript",
-    languageFileName: "js"
+//     languageName: "javascript",
+//     languageFileName: "js"
 
-    },
-    {   
+//     },
+//     {   
 
-    languageName: "java",
-    languageFileName: "java"
+//     languageName: "java",
+//     languageFileName: "java"
 
-    },
-    {
+//     },
+//     {
 
-    languageName: "python",
-    languageFileName: "py"
+//     languageName: "python",
+//     languageFileName: "py"
 
-    },
-]
+//     },
+// ]
 
-myCoding.forEach((item) => {
-    console.log(item.languageName);
-});
+// myCoding.forEach((item) => {
+//     console.log(item.languageName);
+// });
