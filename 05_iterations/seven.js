@@ -3,10 +3,10 @@
 const newNums = myNumbers.map((num) => num + 10)
 console.log(newNums);
 
-// const values = []
-// myNumbers.forEach((num)=>{
-//     values.push(num + 10);                        // using for each
-// })
+const values = []
+myNumbers.forEach((num)=>{
+    values.push(num + 10);                        // using for each
+})
 
-// console.log(values);
+console.log(values);
 
