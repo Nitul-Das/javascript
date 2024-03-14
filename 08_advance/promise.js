@@ -41,7 +41,29 @@ promiseThree.then(function (moi) {
 
 let promiseFour = new Promise(function (resolve, reject) {
     setTimeout(() => {
+
+        let error = false;
+        if (!error) {
+            resolve({
+                username: "nitul",
+                roll: 7032,
+            })
+            
+        } else {
+            reject("Error: something is wrong")      
+        }
         
     }, 2000);
     
+})
+
+promiseFour.then((user)=>{
+    console.log(user);
+    return(user.username)
+}).then((username)=>{
+    console.log(username);
+}).catch((error)=>{
+    console.log(error);
+}).finally(()=>{
+    console.log("The promise is either resolved or rejected");
 })
